@@ -14,7 +14,7 @@ struct Node {
     Entry entry;
     Node *next;
     Node();
-    Node(int, Node* = NULL);
+    Node(Entry, Node* = NULL);
 };
 
 class Stack {
@@ -65,7 +65,7 @@ Node::Node(){
         next = NULL;
 }
  
-Node::Node(int item, Node *n){
+Node::Node(Entry item, Node *n){
     if (this != NULL){
         entry = item;
         next = n;
