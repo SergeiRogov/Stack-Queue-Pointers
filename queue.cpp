@@ -89,6 +89,7 @@ errorCode Queue::serve(){
     front = front->next;
     if(front == NULL)
         rear = NULL;
+    delete temp;
     return success;
 }
 
